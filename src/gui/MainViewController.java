@@ -31,7 +31,7 @@ public class MainViewController implements Initializable {
 	
 	@FXML
 	public void onMenuItemDepartment() {
-		System.out.println("onMenuItemDepartment");
+		loadView("/gui/DepartmentList.fxml");
 	}
 	
 	@FXML
@@ -40,9 +40,7 @@ public class MainViewController implements Initializable {
 	}
 	
 	@Override
-	public void initialize(URL uri, ResourceBundle resourceBundle) {
-		
-		
+	public void initialize(URL uri, ResourceBundle resourceBundle) {				
 	}
 	
 	private synchronized void loadView(String absoluteName) {
